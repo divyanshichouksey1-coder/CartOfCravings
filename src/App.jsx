@@ -2,7 +2,6 @@ import { useState } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Menu from './components/Menu'
-import LiveStatus from './components/LiveStatus'
 import WhyUs from './components/WhyUs'
 import InstagramSection from './components/InstagramSection'
 import ContactSection from './components/ContactSection'
@@ -18,8 +17,6 @@ function App() {
       <ParallaxImages />
       
       <Hero />
-      
-      <LiveStatus />
       
       <Menu hoveredDish={hoveredDish} setHoveredDish={setHoveredDish} />
       

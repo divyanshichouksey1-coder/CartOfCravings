@@ -45,13 +45,18 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
-          className="flex items-center justify-center gap-2 text-electric-orange"
+          className="flex flex-col items-center justify-center gap-2 text-electric-orange"
         >
-          <Sparkles className="w-5 h-5 md:w-6 md:h-6" />
-          <p className="font-elegant text-lg md:text-xl italic">
-            Live From Lucknow
+          <div className="flex items-center gap-2">
+            <Sparkles className="w-5 h-5 md:w-6 md:h-6" />
+            <p className="font-elegant text-lg md:text-xl italic">
+              Live From Lucknow
+            </p>
+            <Sparkles className="w-5 h-5 md:w-6 md:h-6" />
+          </div>
+          <p className="font-elegant text-base md:text-lg text-neon-amber mt-2">
+            Lucknow ki Nawabazi ka Asli Swaad
           </p>
-          <Sparkles className="w-5 h-5 md:w-6 md:h-6" />
         </motion.div>
       </motion.div>
       
