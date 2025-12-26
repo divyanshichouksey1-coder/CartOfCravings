@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white antialiased;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .glassmorphism {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 184, 0, 0.2);
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 20px rgba(255, 184, 0, 0.5),
+                 0 0 40px rgba(255, 107, 53, 0.3);
+  }
+  
+  .neon-border {
+    box-shadow: 0 0 10px rgba(255, 184, 0, 0.5),
+                0 0 20px rgba(255, 184, 0, 0.3),
+                inset 0 0 10px rgba(255, 184, 0, 0.1);
+  }
+}
+
